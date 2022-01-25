@@ -2,5 +2,17 @@ let weeklyExpenses = 0
 let monthlyExpenses = 0
 let annualExpenses = 0
 
-// Your Code Here
+for(let i = 0; i < weeklyExpenseQuestions.length; i++){
+    let answer = parseFloat(window.prompt(weeklyExpenseQuestions[i]))
+    weeklyExpenses = weeklyExpenses + answer
+}
 
+for(let i = 0; i < monthlyExpenseQuestions.length; i++){
+    let answer2 = parseFloat(window.prompt(monthlyExpenseQuestions[i]))
+    monthlyExpenses = monthlyExpenses + answer2
+}
+
+for(let i = 0; i < annualExpenseQuestions.length; i++){
+    let answer3 = parseFloat(window.prompt(annualExpenseQuestions[i]))
+    annualExpenses = annualExpenses + answer3
+}
